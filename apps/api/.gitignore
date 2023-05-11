@@ -1,0 +1,6 @@
+venv
+*.pyc
+.vscode
+.mypy_cache
+.idea
+.env

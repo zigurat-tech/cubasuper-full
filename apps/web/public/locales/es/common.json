@@ -1,0 +1,123 @@
+{
+  "share": "Compartir",
+  "share_description": "El link del producto se ha copiado al portapapeles",
+  "404": {
+    "title": "Lo sentimos, no es posible encontrar la página que buscas.",
+    "button": "Ir al inicio"
+  },
+  "products": {
+    "empty": "No hay productos"
+  },
+  "categories": {
+    "title": "Categorías y subcategorías"
+  },
+  "header": {
+    "category": "Categorías",
+    "habitual": "Mis Habituales",
+    "english": "Inglés",
+    "about-us":"Sobre Nosotros",
+    "contacts":"Contactos",
+    "spanish":"Español",
+    "identify": "Identíficate",
+    "questions": "Preguntas frecuentes",
+    "special-offers": "Ofertas Especiales",
+    "help": "Ayuda",
+    "search_placeholder": "Buscar Productos",
+    "log_in": "Iniciar sesión"
+  },
+  "cart": {
+    "title": "Carrito",
+    "empty": "Vaciar",
+    "empty_title": "Vaciar carro",
+    "empty_question": "¿Seguro que quieres vaciar tu carro?",
+    "empty_description_1": "Aún no has añadido productos",
+    "empty_description_2": " a tu carro",
+    "empty_cancel": "Cancelar",
+    "empty_accept": "Vaciar carro",
+    "total": "Total aproximado",
+    "checkout": "Tramitar pedido",
+    "checkout_confirm": "¿Está seguro de tramitar este pedido?",
+    "checkout_accept": "Confirmar",
+    "product_cart": "En carro",
+    "add_to_cart": "Añadir al carro",
+    "related": "Productos relacionados",
+    "identify": "Identifícate para continuar"
+  },
+  "search": {
+    "title_part1": "Mostrando",
+    "title_part2": "resultados para",
+    "category": "Categoría",
+    "brand": "Marca",
+    "category_empty": "No categorías encontradas",
+    "brand_empty": "No marcas encontradas",
+    "mobile_filter": "Filtrado"
+  },
+  "identify": {
+    "title": "Iniciar sesión",
+    "log_in": "Iniciar sesión",
+    "log_in_success": "Sesión iniciada exitosamente",
+
+    "log_out": "Cerrar sesión",
+    "log_out_success": "Sesión cerrada exitosamente",
+
+    "sign_up": "Inscribirse",
+    "sign_up_success": "Se ha inscrito exitosamente",
+    "divider_or": "o",
+
+    "username": "Nombre de usuario",
+    "username_helper": "Ingrese el nombre de usuario.",
+    "username_error": "Se requiere el campo nombre de usuario.",
+
+    "password": "Contraseña",
+    "password_helper": "Ingrese la contraseña.",
+    "password_error": "Se requiere el campo contraseña.",
+
+    "firstname": "Nombre",
+    "firstname_helper": "Ingrese el nombre.",
+    "firstname_error": "Se requiere el campo nombre.",
+
+    "lastname": "Apellido",
+    "lastname_helper": "Ingrese el apellido.",
+    "lastname_error": "Se requiere el campo apellido.",
+
+    "email": "Correo electrónico",
+    "email_helper": "Ingrese el correo electrónico.",
+    "email_error": "Se requiere el campo correo electrónico.",
+
+    "confirm": "Confirmar",
+    "confirm_helper": "Ingrese la contraseña de nuevo",
+    "confirm_error": "Se requiere el campo confirmar.",
+    "password_confirm_error": "El campo contraseña y confirmar deben de ser iguales",
+
+    "error_user_exist":"El usuario ya existe",
+    "error_user_inactive":"Esta cuenta no se encuentra activada"
+  },
+  "checkout-success":{
+    "text":"Su compra fue exitosa",
+    "back":"Volver a las sección de categorías"
+  },
+  "checkout-failure":{
+    "text":"Su compra falló, por favor intente de nuevo o contacte con soporte",
+    "back":"Volver a las sección de categorías"
+  },
+  "index":{
+    "news_title":"Novedades",
+    "news_description":"Descubre los productos mas recientes",
+    "popular_title":"Populares",
+    "popular_description":"Lo que mas aman nuestros clientes",
+    "recommended_title":"Nuestros Recomendados",
+    "recommended_description":"Encuentra aqui nuestras mejores ofertas"
+  },
+  "copyright":"Todos los derechos reservados.",  
+  "footer":{
+    "products":"Productos",
+    "news":"Novedades",
+    "popular":"Populares",
+    "recommended":"Recomendados",
+    "info":"Información",
+    "about":"Sobre Nosotros",
+    "contacts":"Contactos",
+    "sections":"Secciones",
+    "categories":"Categorías"
+  }
+}

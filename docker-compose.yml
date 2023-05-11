@@ -1,0 +1,61 @@
+version: '3'
+
+services:
+    cubasuper-db:
+        container_name: cubasuper-db
+        image: postgres:latest
+        ports:
+          - "5432:5432"
+        volumes:
+          - /data/postgres:/data/postgres
+        environment:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: postgres
+          PGDATA: /var/lib/postgresql/data/pgdata
+        restart: unless-stopped
+        networks:
+          - postgres
+
+    cubasuper-api:
+        container_name: cubasuper-api
+        image: cubasuper/api
+        env_file:
+          - ./apps/api/.env
+        build:
+          context: ./apps/api/
+          dockerfile: Dockerfile
+        extra_hosts:
+          - "host.docker.internal:host-gateway"
+        ports:
+          - "8000:8000"
+        restart: unless-stopped
+        expose:
+          - 8000
+        depends_on:
+          - cubasuper-db
+        networks:
+          - postgres
+
+    cubasuper-web:
+        container_name: cubasuper-web
+        image: cubasuper/web
+        env_file:
+          - ./apps/web/.env
+        build:
+          context: ./apps/web/
+          dockerfile: Dockerfile
+        ports:
+          - "3000:3000"
+        expose:
+          - 3000
+        restart: unless-stopped
+        depends_on:
+          - cubasuper-db
+          - cubasuper-api
+        networks:
+          - postgres
+
+networks:
+    postgres:
+        driver: bridge

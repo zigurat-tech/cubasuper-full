@@ -1,0 +1,118 @@
+{
+  "share": "Share",
+  "share_description": "The product link has been copied to the clipboard",
+  "404": {
+    "title": "Sorry, the page you are looking for cannot be found.",
+    "button": "Go to home"
+  },
+  "products": {
+    "empty": "There are no products"
+  },
+  "categories": {
+    "title": "Categories and subcategories"
+  },
+  "header": {
+    "category": "Category",
+    "habitual": "My Usuals",
+    "about-us":"About Us",
+    "contacts":"Contacts",
+    "english": "English",
+    "spanish": "Spanish",
+    "identify": "Identify",
+    "questions": "Frequent questions",
+    "special-offers": "Special Offers",
+    "help": "Help",
+    "search_placeholder": "Search Products",
+    "log_in": "Log in"
+  },
+  "cart": {
+    "title": "Cart",
+    "empty": "Empty",
+    "empty_title": "Empty cart",
+    "empty_question": "Are you sure you want to empty your cart?",
+    "empty_description_1": "You have not added products yet",
+    "empty_description_2": " to your car",
+    "empty_cancel": "Cancel",
+    "empty_accept": "Empty cart",
+    "total": "Estimated total",
+    "checkout": "Checkout",
+    "checkout_confirm": "Are you sure to process this order?",
+    "checkout_accept": "Confirm",
+    "product_cart": "In cart",
+    "add_to_cart": "Add to cart",
+    "related": "Related products",
+    "identify": "Log in to continue"
+  },
+  "search": {
+    "title_part1": "Showing",
+    "title_part2": "results for",
+    "category": "Category",
+    "brand": "Brand",
+    "category_empty": "No categories found",
+    "brand_empty": "No marks found",
+    "mobile_filter": "Filter"
+  },
+  "identify": {
+    "title": "Log in",
+    "log_in": "Log in",
+    "log_in_success": "Logged in successfully",
+
+    "log_out": "Log out",
+    "log_out_success": "Logged out successfully",
+
+    "sign_up": "Sign Up",
+    "sign_up_success": "You have successfully sign up",
+
+    "divider_or": "or",
+    "username": "Username",
+    "username_helper": "Enter your profile username.",
+    "username_error": "Username is required.",
+    "firstname": "Firstname",
+    "firstname_helper": "Enter your profile firstname.",
+    "firstname_error": "Firstname is required.",
+    "lastname": "Lastname",
+    "lastname_helper": "Enter your profile lastname.",
+    "lastname_error": "Lastname is required.",
+    "email": "Email",
+    "email_helper": "Enter your profile email.",
+    "email_error": "Email is required.",
+    "password": "Password",
+    "password_helper": " Enter your profile password.",
+    "password_error": "Password is required.",
+    "confirm": "Confirm",
+    "confirm_helper": "Enter your profile password again.",
+    "confirm_error": "Confirm is required.",
+    "password_confirm_error": "The password and confirm fields must be the equal",
+    "error_user_exist":"User already exist",
+    "error_user_inactive":"This account is not activated"
+
+  },
+  "checkout-success":{
+    "text":"Your purchase was successful.",
+    "back":"Back to categories section"
+  },
+  "checkout-failure":{
+    "text":"Your purchase failed, please try again or contact to support.",
+    "back":"Back to categories section"
+  },
+  "index":{
+    "news_title":"News",
+    "news_description":"Discover the latest products",
+    "popular_title":"Popular",
+    "popular_description":"What our customers love the most",
+    "recommended_title":"Our Recommended",
+    "recommended_description":"Find here our best offers"
+  },
+  "copyright":"All rights reserved.",
+  "footer":{
+    "products":"Products",
+    "news":"News",
+    "popular":"Popular",
+    "recommended":"Recommended",
+    "info":"Info",
+    "about":"About Us",
+    "contacts":"Contacts",
+    "sections":"Sections",
+    "categories":"Categories"
+  }
+}
