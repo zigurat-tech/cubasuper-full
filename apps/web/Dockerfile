@@ -14,7 +14,5 @@ COPY . .
 #build proyect
 RUN yarn build
 
-EXPOSE 3000
-
 #start proyect
 CMD ["yarn","start"]

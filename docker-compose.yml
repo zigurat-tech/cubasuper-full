@@ -21,7 +21,7 @@ services:
         container_name: cubasuper-api
         image: cubasuper/api
         env_file:
-          - .env
+          - ./apps/api/.env
         build:
           context: ./apps/api/
           dockerfile: Dockerfile
@@ -41,7 +41,7 @@ services:
         container_name: cubasuper-web
         image: cubasuper/web
         env_file:
-          - .env
+          - ./apps/web/.env
         build:
           context: ./apps/web/
           dockerfile: Dockerfile
