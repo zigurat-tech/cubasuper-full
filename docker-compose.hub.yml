@@ -20,11 +20,6 @@ services:
     cubasuper-api:
         container_name: cubasuper-api
         image: oljimenez/cubasuper:api
-        env_file:
-          - ./apps/api/.env
-        build:
-          context: ./apps/api/
-          dockerfile: Dockerfile
         extra_hosts:
           - "host.docker.internal:host-gateway"
         ports:
@@ -40,11 +35,6 @@ services:
     cubasuper-web:
         container_name: cubasuper-web
         image: oljimenez/cubasuper:web
-        env_file:
-          - ./apps/web/.env
-        build:
-          context: ./apps/web/
-          dockerfile: Dockerfile
         ports:
           - "3000:3000"
         expose:
