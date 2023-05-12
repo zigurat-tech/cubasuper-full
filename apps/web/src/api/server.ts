@@ -3,6 +3,7 @@ import { Zodios, makeApi } from "@zodios/core";
 import { ZodiosHooks } from "@zodios/react";
 import axios from "axios";
 import { z } from "zod";
+import {env} from "../env";
 
 export const Subcategory = z.object({
 	id: z.number().int(),
@@ -775,8 +776,8 @@ const endpoints = makeApi([
 	},
 ]);
 
-const clientBaseURL = `${process.env.NEXT_PUBLIC_BACKEND_URL}`;
-const serverBaseURL = `${process.env.BACKEND_URL}`;
+const clientBaseURL = `${env.NEXT_PUBLIC_BACKEND_URL}`;
+const serverBaseURL = "http://cubasuper-api:8000";
 
 export const apiClient = new Zodios( endpoints, {
 	axiosConfig:{

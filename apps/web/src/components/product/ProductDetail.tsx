@@ -26,6 +26,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { Responsive } from "react-alice-carousel";
+import {env} from "../../env";
 
 type ProductDetailProps = {
 	images: string[];
@@ -63,14 +64,14 @@ export function ProductDetail({
 		await closeModal();
 		if (isMobile()) {
 			await navigator.share({
-				text: `${process.env.NEXT_PUBLIC_URL}/product/${product.id}/${
+				text: `${env.NEXT_PUBLIC_URL}/product/${product.id}/${
 					locale === "es" ? product.name : product.name_trans
 				}`,
 				title: t("share_description"),
 			});
 		} else {
 			await navigator.clipboard.writeText(
-				`${process.env.NEXT_PUBLIC_URL}/product/${product.id}/${
+				`${env.NEXT_PUBLIC_URL}/product/${product.id}/${
 					locale === "es" ? product.name : product.name_trans
 				}`,
 			);

@@ -14,5 +14,7 @@ COPY . .
 #build proyect
 RUN yarn build
 
+RUN rm -r ./src
+
 #start proyect
 CMD ["yarn","start"]

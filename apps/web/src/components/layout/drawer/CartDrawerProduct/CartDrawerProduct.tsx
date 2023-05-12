@@ -13,6 +13,7 @@ import { useAuth, useAuthStore, useProductModal } from '@store/models';
 import { ProductDataArray, useCart } from '@store/models/cartDrawer';
 import Image from 'next/image';
 import React from 'react';
+import {env} from "../../../../env";
 
 type CartDrawerProductProps = {
     product: ProductDataArray;
@@ -68,12 +69,12 @@ export function CartDrawerProduct({ product }: CartDrawerProductProps) {
                 overflow={'hidden'}
             >
                 <Image
-                    src={process.env.NEXT_PUBLIC_BACKEND_URL + product.image}
-                    alt={'Example Image'}
+                    src={env.NEXT_PUBLIC_BACKEND_URL + product.image}
+                    alt={'Cart Product'}
                     height={120}
                     width={120}
                     // placeholder={"blur"}
-                    // blurDataURL={process.env.NEXT_PUBLIC_BACKEND_URL + product.image}
+                    // blurDataURL={env.NEXT_PUBLIC_BACKEND_URL + product.image}
                 />
                 <Box
                     top={0}

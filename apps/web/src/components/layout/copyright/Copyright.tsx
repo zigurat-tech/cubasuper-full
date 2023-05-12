@@ -1,6 +1,7 @@
 import { Center, Text } from "@chakra-ui/react";
 import { useTrans } from "@hooks/useTrans";
 import { useState } from "react";
+import {env} from "../../../env";
 
 export const Copyright = () => {
 	const { t } = useTrans();
@@ -9,7 +10,7 @@ export const Copyright = () => {
 	return (
 		<Center height={"4rem"} width={"full"} textAlign={"center"}>
 			<Text maxWidth={{ base: "30ch", lg: "full" }}>
-				Copyright © {year}. {process.env.NEXT_PUBLIC_URL_NAME}. {t("copyright")}
+				Copyright © {year}. {env.NEXT_PUBLIC_URL}. {t("copyright")}
 			</Text>
 		</Center>
 	);

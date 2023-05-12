@@ -14,6 +14,7 @@ import {
     Magnifier,
     TOUCH_ACTIVATION
 } from 'react-image-magnifiers';
+import {env} from "../../../env";
 
 type ProductCardModalMagnifierProps = {
     images: string[];
@@ -90,12 +91,12 @@ export default function ProductModalMagnifier({
                 }}
             >
                 <Image
-                    src={process.env.NEXT_PUBLIC_BACKEND_URL + img}
+                    src={env.NEXT_PUBLIC_BACKEND_URL + img}
                     alt={'Image Product Magnifier'}
                     fill
                     sizes={'80px'}
                     // placeholder={"blur"}
-                    // blurDataURL={process.env.NEXT_PUBLIC_BACKEND_URL + img}
+                    // blurDataURL={env.NEXT_PUBLIC_BACKEND_URL + img}
                 />
             </Box>
         </Center>
@@ -122,10 +123,10 @@ export default function ProductModalMagnifier({
                     setIsZoom(false);
                 }}
                 imageSrc={
-                    process.env.NEXT_PUBLIC_BACKEND_URL + selectedPreviewImage
+                    env.NEXT_PUBLIC_BACKEND_URL + selectedPreviewImage
                 }
                 largeImageSrc={
-                    process.env.NEXT_PUBLIC_BACKEND_URL + selectedPreviewImage
+                    env.NEXT_PUBLIC_BACKEND_URL + selectedPreviewImage
                 }
                 imageAlt={'Magnifier Product Image'}
                 sx={{

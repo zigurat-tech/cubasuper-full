@@ -29,7 +29,7 @@ build: build
 #build web
 .PHONY: build-web
 build-web:
-	docker build -t oljimenez/cubasuper:web ./apps/web
+	docker build -t oljimenez/cubasuper:web  ./apps/web
 
 #build api
 .PHONY: build-api

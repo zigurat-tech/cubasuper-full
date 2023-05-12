@@ -17,6 +17,7 @@ import { useProductModal } from '@store/models/productModal';
 import { colors } from '@theme/colors';
 import Image from 'next/image';
 import React from 'react';
+import {env} from "../../../env";
 
 type ProductCardProps = {
     product: ProductType;
@@ -93,14 +94,14 @@ export default function ProductCard({ product }: ProductCardProps) {
                 >
                     <Image
                         src={
-                            process.env.NEXT_PUBLIC_BACKEND_URL + product.image
+                            env.NEXT_PUBLIC_BACKEND_URL + product.image
                         }
                         alt={
                             locale === 'es' ? product.name : product.name_trans!
                         }
                         fill
                         // placeholder={"blur"}
-                        // blurDataURL={process.env.NEXT_PUBLIC_BACKEND_URL + product.image}
+                        // blurDataURL={env.NEXT_PUBLIC_BACKEND_URL + product.image}
                         loading={'lazy'}
                     />
                 </Box>

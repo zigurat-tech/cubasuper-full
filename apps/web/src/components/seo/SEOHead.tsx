@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Script from 'next/script';
 import React from 'react';
+import {env} from "../../env";
 
 type HeadProps = {
     children?: React.ReactNode;
@@ -23,18 +24,18 @@ const SEOHead: React.FC<HeadProps> = ({ children }) => {
                 <meta
                     property="og:image"
                     itemProp="image"
-                    content={`${process.env.NEXT_PUBLIC_URL}/cubasuper_logo.png`}
+                    content={`${env.NEXT_PUBLIC_URL}/cubasuper_logo.png`}
                 />
                 <meta
                     property="og:image:secure_url"
                     itemProp="image"
-                    content={`${process.env.NEXT_PUBLIC_URL}/cubasuper_logo.png`}
+                    content={`${env.NEXT_PUBLIC_URL}/cubasuper_logo.png`}
                 />
                 <meta
                     property="og:description"
                     content="Cubasuper marketplace."
                 />
-                <meta property="og:url" content={process.env.NEXT_PUBLIC_URL} />
+                <meta property="og:url" content={env.NEXT_PUBLIC_URL} />
 
                 <meta name="twitter:card" content="summary" />
                 <meta
@@ -48,17 +49,17 @@ const SEOHead: React.FC<HeadProps> = ({ children }) => {
                 />
                 <meta
                     name="twitter:image"
-                    content={`${process.env.NEXT_PUBLIC_URL}/cubasuper_logo.png`}
+                    content={`${env.NEXT_PUBLIC_URL}/cubasuper_logo.png`}
                 />
 
                 <link rel="shortcut icon" href="/favicon.svg" />
                 <link rel="manifest" href="/manifest.json" />
                 <link rel="apple-touch-icon" href="/favicon.svg" />
-                <link rel="canonical" href={process.env.NEXT_PUBLIC_URL} />
+                <link rel="canonical" href={env.NEXT_PUBLIC_URL} />
             </Head>
             {/*<Script*/}
             {/*    strategy={'lazyOnload'}*/}
-            {/*    src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}*/}
+            {/*    src={`https://www.googletagmanager.com/gtag/js?id=${env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}*/}
             {/*/>*/}
 
             {/*<Script*/}
@@ -69,7 +70,7 @@ const SEOHead: React.FC<HeadProps> = ({ children }) => {
             {/*    window.dataLayer = window.dataLayer || [];*/}
             {/*    function gtag(){dataLayer.push(arguments);}*/}
             {/*    gtag('js', new Date());*/}
-            {/*    gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}', {*/}
+            {/*    gtag('config', '${env.NEXT_PUBLIC_GOOGLE_ANALYTICS}', {*/}
             {/*       page_path: window.location.pathname,*/}
             {/*    });`*/}
             {/*    }}*/}

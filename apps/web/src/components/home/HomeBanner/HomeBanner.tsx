@@ -3,6 +3,7 @@ import { Container, Flex, HStack } from '@chakra-ui/react';
 import Image from 'next/image';
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
+import {env} from "../../../env";
 
 type HomeBannerProps = {
     data: BannerType[];
@@ -43,12 +44,12 @@ export default function HomeBanner({ data }: HomeBannerProps) {
                             position={'relative'}
                         >
                             <Image
-                                src={`${process.env.NEXT_PUBLIC_BACKEND_URL}${image}`}
+                                src={`${env.NEXT_PUBLIC_BACKEND_URL}${image}`}
                                 alt={'HomeBanner Offer'}
                                 fill
                                 priority
                                 // placeholder={'blur'}
-                                // blurDataURL={`${process.env.NEXT_PUBLIC_BACKEND_URL}${image}`}
+                                // blurDataURL={`${env.NEXT_PUBLIC_BACKEND_URL}${image}`}
                             />
                         </HStack>
                     ))}
