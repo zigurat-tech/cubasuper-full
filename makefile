@@ -1,12 +1,17 @@
 #start
 .PHONY start:
-start:
-	docker compose up
+start: build
+	docker-compose up
 
 #start detatch
 .PHONY start-detatch:
-start-detatch:
+start-detatch: build
 	docker compose up -d
+
+#start detatch
+.PHONY migrate:
+migrate:
+	docker exec cubasuper-api python3 manage.py migrate
 
 #build
 .PHONY build:
