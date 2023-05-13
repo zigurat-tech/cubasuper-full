@@ -28,13 +28,15 @@ environ.Env.read_env()
 # SECRET_KEY = 'django-insecure-3*t%hr%w+!m+(tl%cpy^j#7ptd+r01py4%l4ynnhd$5%v+i%rm'
 SECRET_KEY = env('SECRET_KEY')
 
+SAFE_URL =  env('NEXT_PUBLIC_BACKEND_URL')
+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 CORS_ORIGIN_ALLOW_ALL = True
 CORS_ALLOW_CREDENTIALS = True
-CSRF_TRUSTED_ORIGINS = ['https://*.ngrok.io', 'https://*.127.0.0.1']
+CSRF_TRUSTED_ORIGINS = ['https://*.ngrok.io', 'https://*.127.0.0.1', SAFE_URL]
 
 # Application definition
 
