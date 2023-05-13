@@ -16,6 +16,7 @@ import Image from 'next/image';
 import { CategoryType, Response } from '@api/server';
 import { SubcategoryAccordionItem } from '../SubcategoryAccordionItem';
 import { useTrans } from '@hooks/useTrans';
+import {env} from "../../../../env";
 
 type CategoryAccordionItemProps = {
     categories: Response<CategoryType>;
@@ -74,11 +75,11 @@ export function CategoryAccordionItem({
                                             <AccordionIcon />
                                             <Image
                                                 src={
-                                                    process.env
+                                                    env
                                                         .NEXT_PUBLIC_BACKEND_URL +
                                                     categoryItem.image
                                                 }
-                                                alt={'product type'}
+                                                alt={'category type'}
                                                 height={24}
                                                 width={24}
                                             />
