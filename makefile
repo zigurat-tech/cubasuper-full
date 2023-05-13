@@ -1,17 +1,17 @@
 #start
 .PHONY start:
 start: build
-	docker compose up
+	docker-compose up
 
 #start
 .PHONY start-hub:
 start-hub:
-	docker compose -f docker-compose.hub.yml up
+	docker-compose -f docker-compose.hub.yml up
 
 #start detatch
 .PHONY start-detatch:
 start-detatch: build
-	docker compose up -d
+	docker-compose up -d
 
 #start detatch
 .PHONY migrate:
