@@ -16,7 +16,12 @@ start-detatch: build
 #start detatch
 .PHONY migrate:
 migrate:
-	docker exec cubasuper-api python3 manage.py migrate
+	docker exec -it cubasuper-api python3 manage.py migrate
+
+#start detatch
+.PHONY createsuperuser:
+createsuperuser:
+	docker exec -it cubasuper-api python3 manage.py createsuperuser
 
 
 ######################## BUILD ###################################
